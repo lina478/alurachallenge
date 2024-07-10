@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header>
+        <img id="logo-imagen" src="logo.png" alt="Descripción de la imagen">
+    </header>
+    <div id="contenedor-principal">
+        <div id="caja-de-entrada">
+            <div id="textarea-entrada" contenteditable="true"> Ingrese el Texto aqui
+            </div>
+            <p id="info">Solo letras en minusculas y sin acentos.</p>
+            <div id="botones">
+                <button id="encriptar" onclick="encriptar()"> Encriptar</button>
+                <button id="desencriptar" onclick="desencriptar()"> Desencriptar</button>
+            </div>
+        </div>
+        <div id="caja-de-salida">
+            <div id="textarea-salida">
+           <div id="imagen-mensaje">
+            <img src="imagen.png">
+            <h2 id="resultado">Ningún mensaje fue encontrado</h2>
+           </div>
+                
+            </div>
+            <div id="botones">
+                <button id="copiar" onclick="copiarTexto()"> Copiar
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <footer>
+        <p id="texto-pie">2024 Lina Salazar</p>
+    </footer>
+
+</body>
+
+</html>
